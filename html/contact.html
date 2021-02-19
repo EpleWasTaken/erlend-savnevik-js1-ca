@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="#">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/form.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/cafca22d75.js" crossorigin="anonymous"></script>
+    <title>FTPGD Contact</title>
+</head>
+<body>
+    <h1>Free-to-play games database</h1>
+    <nav>
+        <ul class="nav-links">
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/html/contact.html">Contact</a></li>
+            <li><a href="/credits.html">Credits</a></li>
+        </ul>
+    </nav>
+    
+    <main>
+        <div class="contact-form">
+            <h2>Contact</h2>
+            <h3>Call us or use the contact form below to conatct us.</h3>
+        </div>
+        <div class="contactPhone">
+            <p>+12 345 67 890</p>
+            <a><a class="fas fa-phone"></a>
+        </div>
+
+        <div class="form-input">
+            <form id="contactForm">
+                
+                <div>
+                    <label>
+                        Full name (required)
+                        <input type="text" id="fullName" placeholder=" Your full name..."/>
+                    </label>
+                    <div class="formError" id="fullNameError">Please enter a valid full name</div>
+                </div> 
+
+                <div>
+                    <label>
+                        Subject
+                        <input type="text" id="subject" placeholder=" What is this regarding?..."/>
+                    </label>
+                    <div class="formError" id="subjectError">Subject must be at least 10 characters</div>
+                </div>
+                
+                <div>
+                    <label>
+                        Email
+                        <input type="text" id="email" placeholder=" example@outlook.com..."/>
+                    </label>
+                    <div class="formError" id="emailError">Please enter a valid email address</div>
+                </div>
+                
+                <div>
+                    <label>
+                        Address
+                        <input type="text" id="address" placeholder=" Exampleroad 9 1258..."/>
+                    </label>
+                    <div class="formError" id="addressError">Address must be at least 25 characters</div>
+                </div>
+                
+                <button type="submit">Submit form</button>
+
+            </form>
+        </div>
+    </main>
+    <script src="/js/error.js"></script>
+    <script src="/js/form-validation.js"></script>
+</body>
+</html>

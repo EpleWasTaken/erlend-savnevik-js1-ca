@@ -1,0 +1,134 @@
+:root {
+  --main-blue: #00ffff;
+  --main-black: #000000;
+  --main-white: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--main-black);
+}
+
+h1 {
+  text-align: center;
+  font-weight: 600;
+  font-size: 2rem;
+  background-color: var(--main-blue);
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: var(--main-blue);
+}
+
+.nav-links {
+  display: flex;
+  text-transform: uppercase;
+  justify-content: space-around;
+  width: 50%;
+}
+
+.nav-links li {
+  list-style: none;
+}
+
+.nav-links a {
+  color: var(--main-black);
+  text-decoration: none;
+  background-color: var(--main-blue);
+  letter-spacing: 2px;
+  list-style: none;
+}
+
+ul {
+  display: flex;
+  padding: 20px;
+  justify-content: space-around;
+  width: 30%;
+  background-color: var(--main-blue);
+  list-style: none;
+  padding: 0;
+}
+
+.nav-links a:hover {
+  background-color: white;
+}
+
+.nav-links a:active {
+  text-decoration: underline;
+  color: var(--main-white);
+}
+
+.heading {
+  margin-bottom: 1rem;
+  text-align: center;
+  font-size: 1.7rem;
+  font-weight: 400;
+  color: var(--main-white);
+  margin: 1.2rem;
+}
+
+.details-image {
+  margin-bottom: 1em;
+  height: 290px;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.game-info {
+  margin-bottom: 1rem;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--main-white);
+  margin: 1.2rem;
+  max-width: 500px;
+  margin: auto;
+}
+
+.game-genre {
+  margin-bottom: 1rem;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--main-white);
+  margin: 1.2rem;
+}
+
+.error {
+  color: red;
+  text-align: center;
+  margin-top: 10rem;
+}
+
+.loader {
+  top: 50%;
+  left: 50%;
+  border: 8px solid var(--main-blue);
+  border-top: 8px solid var(--main-black);
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
