@@ -21,7 +21,7 @@ async function getGames() {
       console.log(json[i]);
 
       resultsContainer.innerHTML += ` <div class="heading">${json[i].title}</div>
-                                      <a href="details.html?id=${json[i].id}" class="card">                                
+                                      <a href="html/details.html?id=${json[i].id}" class="card">                                
                                       <div class="details-image" style="background-image: url('${json[i].thumbnail}')"></div>
                                       </a>
                                       <div class="game-info">${json[i].short_description}</div>
